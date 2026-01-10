@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SecureNotes">
         <activity
+            android:name=".ui.AddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.UpdateDeleteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.HomeActivity"
             android:exported="false" />
         <activity
