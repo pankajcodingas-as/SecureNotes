@@ -1,0 +1,6 @@
+toml
+# In gradle/libs.versions.toml
+
+[plugins]
+# ... existing plugins
+androidx-navigation-safeargs = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navigation" }

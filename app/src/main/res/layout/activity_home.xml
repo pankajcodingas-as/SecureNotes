@@ -8,6 +8,8 @@
     tools:context=".ui.HomeActivity"
     android:background="@color/black_color">
 
+
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="56dp"
         android:layout_height="56dp"

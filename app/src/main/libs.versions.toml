@@ -1,0 +1,6 @@
+toml
+# In gradle/libs.versions.toml
+
+[versions]
+# ... existing versions
+navigation = "2.7.7"
