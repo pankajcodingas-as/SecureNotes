@@ -20,8 +20,8 @@ interface SafeDao {
     @Delete
     suspend fun deleteSafe(safe: Safe)
 
-    @Query("SELECT * FROM safe_table ORDER BY id ASC")
-    fun readAllSafe(): LiveData<List<Safe>>
+    @Query("SELECT * FROM safe_table ORDER BY safeName ASC")
+    fun getAllSafe(): LiveData<List<Safe>>
 
     @Query("select count(safeName) from safe_table where safeName = :safeName")
     suspend fun getAllSafeCount(safeName: String): Int

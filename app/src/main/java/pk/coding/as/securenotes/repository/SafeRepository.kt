@@ -17,7 +17,7 @@ class SafeRepository(private val safeDao: SafeDao){
         safeDao.deleteSafe(safe)
     }
 
-    fun readAllSafe() = safeDao.readAllSafe()
+    fun getAllSafe() = safeDao.getAllSafe()
 
     suspend fun getAllSafeCount(safeName: String) = safeDao.getAllSafeCount(safeName)
 

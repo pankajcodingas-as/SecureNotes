@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     id("androidx.room")
     id("com.google.devtools.ksp")
+    id("kotlin-parcelize")
 }
 
 room {

@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SecureNotes">
         <activity
+            android:name=".ui.UpdateDeleteNoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.UpdateDeleteSafeActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.NoteActivity"
             android:exported="false" />
         <activity

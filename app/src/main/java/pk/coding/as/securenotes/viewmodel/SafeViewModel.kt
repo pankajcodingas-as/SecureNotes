@@ -13,11 +13,21 @@ class SafeViewModel(
     private val safeRepository: SafeRepository
 ): ViewModel() {
 
+    var safeAddMsg: String = ""
+
 
 
     fun addSafe(safe: Safe) {
         viewModelScope.launch() {
-            safeRepository.addSafe(safe)
+            val count = safeRepository.getAllSafeCount(safe.safeName)
+            if (count == 0) {
+                safeRepository.addSafe(safe)
+                safeAddMsg = "Safe added successfully"
+            }
+            else{
+                safeAddMsg = "Safe already exists"
+            }
+
         }
     }
 
@@ -34,7 +44,7 @@ class SafeViewModel(
         }
     }
 
-    fun readAllSafe() = safeRepository.readAllSafe()
+    fun getAllSafe() = safeRepository.getAllSafe()
 
     fun getAllSafeCount(safeName: String) {
         viewModelScope.launch() {
